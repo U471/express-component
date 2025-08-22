@@ -12,7 +12,7 @@ const options = {
     },
     servers: [
       {
-        url: "http://localhost:4000/api/v1",
+        url: process.env.BASE_URL || "http://localhost:4000/api/v1",
       },
     ],
     components: {
@@ -24,15 +24,13 @@ const options = {
         },
       },
     },
-
   },
-  apis: ["./src/routes/*.js"], // routes ke files se docs read karega
+  apis: ["./src/routes/*.js"],
 };
-
 const swaggerSpec = swaggerJsDoc(options);
 
 const swaggerDocs = (app) => {
-  app.use("/api-docs", serve, setup(swaggerSpec));
+  app.use("/api-docs", serve, setup(swaggerSpec, { explorer: true }));
 };
 
 export default swaggerDocs;
