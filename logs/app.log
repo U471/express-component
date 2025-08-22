@@ -1,0 +1,52 @@
+{"error":{"code":8000,"codeName":"AtlasError","connectionGeneration":0,"errorLabelSet":{},"errorResponse":{"code":8000,"codeName":"AtlasError","errmsg":"bad auth : authentication failed","ok":0},"ok":0},"level":"error","message":"Failed to start server","timestamp":"2025-08-21T05:15:18.967Z"}
+{"error":{"code":8000,"codeName":"AtlasError","connectionGeneration":0,"errorLabelSet":{},"errorResponse":{"code":8000,"codeName":"AtlasError","errmsg":"bad auth : authentication failed","ok":0},"ok":0},"level":"error","message":"Failed to start server","timestamp":"2025-08-21T05:20:46.612Z"}
+{"level":"info","message":"MongoDB connected","timestamp":"2025-08-21T05:23:26.648Z"}
+{"level":"info","message":"Server running on port 4000","timestamp":"2025-08-21T05:23:26.663Z"}
+{"level":"info","message":"MongoDB connected","timestamp":"2025-08-22T05:30:01.556Z"}
+{"level":"info","message":"Server running on port 4000","timestamp":"2025-08-22T05:30:01.565Z"}
+{"level":"info","message":"MongoDB connected","timestamp":"2025-08-22T05:30:57.943Z"}
+{"level":"info","message":"Server running on port 4000","timestamp":"2025-08-22T05:30:57.949Z"}
+{"level":"info","message":"MongoDB connected","timestamp":"2025-08-22T05:31:30.975Z"}
+{"level":"info","message":"Server running on port 4000","timestamp":"2025-08-22T05:31:30.983Z"}
+{"level":"info","message":"MongoDB connected","timestamp":"2025-08-22T05:43:00.878Z"}
+{"level":"info","message":"Server running on port 4000","timestamp":"2025-08-22T05:43:00.884Z"}
+{"level":"info","message":"MongoDB connected","timestamp":"2025-08-22T05:46:49.808Z"}
+{"level":"info","message":"Server running on port 4000","timestamp":"2025-08-22T05:46:49.817Z"}
+{"level":"info","message":"MongoDB connected","timestamp":"2025-08-22T05:48:13.514Z"}
+{"level":"info","message":"Server running on port 4000","timestamp":"2025-08-22T05:48:13.522Z"}
+{"level":"info","message":"MongoDB connected","timestamp":"2025-08-22T05:48:59.040Z"}
+{"level":"info","message":"Server running on port 4000","timestamp":"2025-08-22T05:48:59.048Z"}
+{"level":"info","message":"MongoDB connected","timestamp":"2025-08-22T05:49:02.837Z"}
+{"level":"info","message":"Server running on port 4000","timestamp":"2025-08-22T05:49:02.847Z"}
+{"level":"info","message":"MongoDB connected","timestamp":"2025-08-22T05:49:21.992Z"}
+{"level":"info","message":"Server running on port 4000","timestamp":"2025-08-22T05:49:22.002Z"}
+{"level":"info","message":"MongoDB connected","timestamp":"2025-08-22T05:49:26.637Z"}
+{"level":"info","message":"Server running on port 4000","timestamp":"2025-08-22T05:49:26.644Z"}
+{"level":"info","message":"MongoDB connected","timestamp":"2025-08-22T06:20:26.576Z"}
+{"level":"info","message":"MongoDB connected","timestamp":"2025-08-22T06:20:26.585Z"}
+{"level":"info","message":"Server running on port 4000","timestamp":"2025-08-22T06:20:26.590Z"}
+{"level":"info","message":"MongoDB connected","timestamp":"2025-08-22T06:20:44.125Z"}
+{"level":"info","message":"Server running on port 4000","timestamp":"2025-08-22T06:20:44.140Z"}
+{"level":"info","message":"MongoDB connected","timestamp":"2025-08-22T06:20:44.306Z"}
+{"level":"info","message":"MongoDB connected","timestamp":"2025-08-22T06:24:25.813Z"}
+{"level":"info","message":"Server running on port 4000","timestamp":"2025-08-22T06:24:25.819Z"}
+{"level":"info","message":"MongoDB connected","timestamp":"2025-08-22T06:24:25.993Z"}
+{"level":"info","message":"MongoDB connected","timestamp":"2025-08-22T06:30:47.969Z"}
+{"level":"info","message":"Server running on port 4000","timestamp":"2025-08-22T06:30:47.977Z"}
+{"level":"info","message":"MongoDB connected","timestamp":"2025-08-22T06:30:48.097Z"}
+{"level":"info","message":"MongoDB connected","timestamp":"2025-08-22T06:33:38.232Z"}
+{"level":"info","message":"Server running on port 4000","timestamp":"2025-08-22T06:33:38.240Z"}
+{"level":"info","message":"MongoDB connected","timestamp":"2025-08-22T06:33:38.436Z"}
+{"details":{},"level":"error","message":"Request failed __dirname is not defined","method":"GET","stack":"AppError: __dirname is not defined\n    at errorHandler (file:///D:/mern/express-mongo-starter/src/middlewares/errorHandler.js:6:47)\n    at Layer.handle_error (D:\\mern\\express-mongo-starter\\node_modules\\express\\lib\\router\\layer.js:71:5)\n    at trim_prefix (D:\\mern\\express-mongo-starter\\node_modules\\express\\lib\\router\\index.js:326:13)\n    at D:\\mern\\express-mongo-starter\\node_modules\\express\\lib\\router\\index.js:286:9\n    at Function.process_params (D:\\mern\\express-mongo-starter\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (D:\\mern\\express-mongo-starter\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Layer.handle_error (D:\\mern\\express-mongo-starter\\node_modules\\express\\lib\\router\\layer.js:67:12)\n    at trim_prefix (D:\\mern\\express-mongo-starter\\node_modules\\express\\lib\\router\\index.js:326:13)\n    at D:\\mern\\express-mongo-starter\\node_modules\\express\\lib\\router\\index.js:286:9\n    at Function.process_params (D:\\mern\\express-mongo-starter\\node_modules\\express\\lib\\router\\index.js:346:12)","statusCode":500,"timestamp":"2025-08-22T06:34:22.043Z","url":"/api/v1/logs"}
+{"level":"info","message":"MongoDB connected","timestamp":"2025-08-22T06:36:13.837Z"}
+{"level":"info","message":"Server running on port 4000","timestamp":"2025-08-22T06:36:13.849Z"}
+{"level":"info","message":"MongoDB connected","timestamp":"2025-08-22T06:36:13.949Z"}
+{"level":"info","message":"MongoDB connected","timestamp":"2025-08-22T06:36:24.500Z"}
+{"level":"info","message":"Server running on port 4000","timestamp":"2025-08-22T06:36:24.518Z"}
+{"level":"info","message":"MongoDB connected","timestamp":"2025-08-22T06:36:24.711Z"}
+{"level":"info","message":"MongoDB connected","timestamp":"2025-08-22T07:15:33.195Z"}
+{"level":"info","message":"MongoDB connected","timestamp":"2025-08-22T07:15:33.202Z"}
+{"level":"info","message":"Server running on port 4000","timestamp":"2025-08-22T07:15:33.202Z"}
+{"level":"info","message":"MongoDB connected","timestamp":"2025-08-22T07:16:11.828Z"}
+{"level":"info","message":"Server running on port 4000","timestamp":"2025-08-22T07:16:11.836Z"}
+{"level":"info","message":"MongoDB connected","timestamp":"2025-08-22T07:16:12.692Z"}
