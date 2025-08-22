@@ -65,21 +65,43 @@ const options = {
 const swaggerSpec = swaggerJsDoc(options);
 
 const swaggerDocs = (app) => {
-  // Serve swagger.json endpoint (for UI to fetch spec)
+  // Serve swagger.json endpoint
   app.get("/swagger.json", (req, res) => {
     res.setHeader("Content-Type", "application/json");
     res.send(swaggerSpec);
   });
 
-  // Serve Swagger UI HTML manually
   const swaggerUiAssetPath = swaggerUiDist.getAbsoluteFSPath();
-  const swaggerHtml = readFileSync(
-    join(swaggerUiAssetPath, "index.html"),
-    "utf-8"
-  ).replace("https://petstore.swagger.io/v2/swagger.json", "/swagger.json");
 
-  app.use("/api-docs", swaggerUi.serve);
-  app.get("/api-docs", (req, res) => res.send(swaggerHtml));
+  // Override swagger-initializer.js to point to /swagger.json
+  app.get("/api-docs/swagger-initializer.js", (req, res) => {
+    res.type("application/javascript");
+    res.send(`window.onload = function() {
+      window.ui = SwaggerUIBundle({
+        url: '/swagger.json',
+        dom_id: '#swagger-ui',
+        presets: [
+          SwaggerUIBundle.presets.apis,
+          SwaggerUIStandalonePreset
+        ],
+        layout: "StandaloneLayout"
+      });
+    }`);
+  });
+
+  // Serve Swagger UI static files
+  app.use("/api-docs", swaggerUi.serve, (req, res, next) => {
+    if (req.path === "/") {
+      const html = readFileSync(
+        join(swaggerUiAssetPath, "index.html"),
+        "utf-8"
+      );
+      res.send(html);
+    } else {
+      next();
+    }
+  });
 };
 
 export default swaggerDocs;
+
