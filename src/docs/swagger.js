@@ -37,11 +37,13 @@
 
 import swaggerJsDoc from "swagger-jsdoc";
 import swaggerUi from "swagger-ui-express";
-import path from "path";
+import { readFileSync } from "fs";
+import { dirname, join } from "path";
 import { fileURLToPath } from "url";
+import swaggerUiDist from "swagger-ui-dist";
 
 const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+const __dirname = dirname(__filename);
 
 const options = {
   definition: {
@@ -63,15 +65,21 @@ const options = {
 const swaggerSpec = swaggerJsDoc(options);
 
 const swaggerDocs = (app) => {
-  app.use(
-    "/api-docs",
-    swaggerUi.serve,
-    swaggerUi.setup(swaggerSpec, {
-      explorer: true,
-      customCssUrl: "https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/4.15.5/swagger-ui.css", // ✅ force load CSS
-    })
-  );
+  // Serve swagger.json endpoint (for UI to fetch spec)
+  app.get("/swagger.json", (req, res) => {
+    res.setHeader("Content-Type", "application/json");
+    res.send(swaggerSpec);
+  });
+
+  // Serve Swagger UI HTML manually
+  const swaggerUiAssetPath = swaggerUiDist.getAbsoluteFSPath();
+  const swaggerHtml = readFileSync(
+    join(swaggerUiAssetPath, "index.html"),
+    "utf-8"
+  ).replace("https://petstore.swagger.io/v2/swagger.json", "/swagger.json");
+
+  app.use("/api-docs", swaggerUi.serve);
+  app.get("/api-docs", (req, res) => res.send(swaggerHtml));
 };
 
 export default swaggerDocs;
-
