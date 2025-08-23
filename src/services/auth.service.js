@@ -30,7 +30,7 @@ export const forgotPassword = async ({ email }) => {
   const expiresAt = new Date(Date.now() + 1000 * 60 * 30); // 30 min
   await PasswordResetToken.create({ userId: user._id, token, expiresAt });
 
-  const resetLink = `${env.APP_URL}/api/v1/auth/reset?token=${token}`;
+  const resetLink = `${env.APP_URL}/auth/reset?token=${token}`;
   await sendEmail({
     to: email,
     subject: 'Password reset',
