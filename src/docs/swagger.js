@@ -121,9 +121,18 @@ const options = {
     },
     servers: [
       {
-        url: process.env.BASE_URL || "http://localhost:4000/api/v1",
+        url: process.env.APP_URL || "http://localhost:4000/api/v1",
       },
     ],
+    components: {
+      securitySchemes: {
+        bearerAuth: {
+          type: "http",
+          scheme: "bearer",
+          bearerFormat: "JWT",
+        },
+      },
+    },
   },
   apis: ["./src/routes/*.js"], // routes se docs
 };

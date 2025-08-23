@@ -20,6 +20,8 @@ const router = Router();
  *                 type: string
  *               password:
  *                 type: string
+ *               name:
+ *                 type: string
  *     responses:
  *       201:
  *         description: User created successfully
