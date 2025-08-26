@@ -100,30 +100,4 @@
 {"level":"info","message":"Server running on port 4000","timestamp":"2025-08-23T07:05:23.910Z"}
 {"level":"info","message":"Email sent","messageId":"<c9d4456a-7647-75af-a88a-53649a507dcf@localhost>","timestamp":"2025-08-23T07:05:35.155Z"}
 {"details":{},"level":"error","message":"Request failed Expected ',' or '}' after property value in JSON at position 51 (line 3 column 3)","method":"POST","stack":"AppError: Expected ',' or '}' after property value in JSON at position 51 (line 3 column 3)\n    at errorHandler (file:///D:/mern/express-component/src/middlewares/errorHandler.js:6:47)\n    at Layer.handle_error (D:\\mern\\express-component\\node_modules\\express\\lib\\router\\layer.js:71:5)\n    at trim_prefix (D:\\mern\\express-component\\node_modules\\express\\lib\\router\\index.js:326:13)\n    at D:\\mern\\express-component\\node_modules\\express\\lib\\router\\index.js:286:9\n    at Function.process_params (D:\\mern\\express-component\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (D:\\mern\\express-component\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Layer.handle_error (D:\\mern\\express-component\\node_modules\\express\\lib\\router\\layer.js:67:12)\n    at trim_prefix (D:\\mern\\express-component\\node_modules\\express\\lib\\router\\index.js:326:13)\n    at D:\\mern\\express-component\\node_modules\\express\\lib\\router\\index.js:286:9\n    at Function.process_params (D:\\mern\\express-component\\node_modules\\express\\lib\\router\\index.js:346:12)","statusCode":400,"timestamp":"2025-08-23T07:08:32.580Z","url":"/api/v1/auth/login"}
-{"level":"info","message":"MongoDB connected","timestamp":"2025-08-23T07:26:46.450Z"}
-{"level":"info","message":"Server running on port 4000","timestamp":"2025-08-23T07:26:46.467Z"}
-{"level":"info","message":"MongoDB connected","timestamp":"2025-08-23T07:55:12.029Z"}
-{"level":"info","message":"Server running on port 4000","timestamp":"2025-08-23T07:55:12.036Z"}
-{"level":"info","message":"MongoDB connected","timestamp":"2025-08-23T07:56:10.774Z"}
-{"level":"info","message":"Server running on port 4000","timestamp":"2025-08-23T07:56:10.788Z"}
-{"level":"info","message":"Email sent","messageId":"<bcf2eaa0-064d-b03f-e2ff-1fccae21ac87@localhost>","timestamp":"2025-08-23T07:57:07.026Z"}
-{"level":"info","message":"MongoDB connected","timestamp":"2025-08-25T10:30:38.882Z"}
-{"level":"info","message":"Server running on port 4000","timestamp":"2025-08-25T10:30:38.889Z"}
-{"level":"info","message":"MongoDB connected","timestamp":"2025-08-26T06:24:40.127Z"}
-{"level":"info","message":"Server running on port 4000","timestamp":"2025-08-26T06:24:40.155Z"}
-{"level":"info","message":"MongoDB connected","timestamp":"2025-08-26T06:47:45.189Z"}
-{"level":"info","message":"Server running on port 4000","timestamp":"2025-08-26T06:47:45.203Z"}
-{"level":"info","message":"MongoDB connected","timestamp":"2025-08-26T07:03:46.677Z"}
-{"level":"info","message":"Server running on port 4000","timestamp":"2025-08-26T07:03:46.696Z"}
-{"level":"info","message":"MongoDB connected","timestamp":"2025-08-26T07:03:53.348Z"}
-{"level":"info","message":"Server running on port 4000","timestamp":"2025-08-26T07:03:53.360Z"}
-{"level":"info","message":"MongoDB connected","timestamp":"2025-08-26T07:06:39.221Z"}
-{"level":"info","message":"Server running on port 4000","timestamp":"2025-08-26T07:06:39.239Z"}
-{"level":"info","message":"MongoDB connected","timestamp":"2025-08-26T07:06:45.014Z"}
-{"level":"info","message":"Server running on port 4000","timestamp":"2025-08-26T07:06:45.021Z"}
-{"level":"info","message":"MongoDB connected","timestamp":"2025-08-26T07:12:16.116Z"}
-{"level":"info","message":"Server running on port 4000","timestamp":"2025-08-26T07:12:16.122Z"}
-{"level":"info","message":"MongoDB connected","timestamp":"2025-08-26T07:12:20.779Z"}
-{"level":"info","message":"Server running on port 4000","timestamp":"2025-08-26T07:12:20.789Z"}
-{"level":"info","message":"MongoDB connected","timestamp":"2025-08-26T07:12:25.475Z"}
-{"level":"info","message":"Server running on port 4000","timestamp":"2025-08-26T07:12:25.482Z"}
+
