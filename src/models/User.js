@@ -14,7 +14,7 @@ const userSchema = new mongoose.Schema(
     avatar: { type: String, default: "" }, // profile picture
     bio: { type: String, default: "" }, // short intro
   },
-  { timestamps: true }
+  { timestamps: true, optimisticConcurrency: true } // yeh add kar do
 );
 
 userSchema.pre('save', async function (next) {
